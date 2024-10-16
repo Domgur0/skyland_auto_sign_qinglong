@@ -113,6 +113,8 @@ def sendMessage(title: str, content: str, type: str):
             notify.wecom_app(title, content)
         elif type == 'QYWXBOT':
             notify.wecom_bot(title, content)
+        elif type == 'SMTP':
+            notify.smtp(title, content)
         else:
             pass
 
